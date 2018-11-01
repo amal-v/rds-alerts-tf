@@ -13,11 +13,11 @@ resource "aws_cloudwatch_metric_alarm" "rds_networktransmitthroughput" {
   treat_missing_data  = "notBreaching"
 
   ok_actions = [
-    "${var.sns-arn}",
+    "${var.sns_arn}",
   ]
 
   alarm_actions = [
-    "${var.sns-arn}",
+    "${var.sns_arn}",
   ]
 
   dimensions {
@@ -39,11 +39,11 @@ resource "aws_cloudwatch_metric_alarm" "rds_freeablememory" {
   treat_missing_data  = "notBreaching"
 
   ok_actions = [
-    "${var.sns-arn}",
+    "${var.sns_arn}",
   ]
 
   alarm_actions = [
-    "${var.sns-arn}",
+    "${var.sns_arn}",
   ]
 
   dimensions {
@@ -65,11 +65,11 @@ resource "aws_cloudwatch_metric_alarm" "rds_writeiops" {
   treat_missing_data  = "notBreaching"
 
   ok_actions = [
-    "${var.sns-arn}",
+    "${var.sns_arn}",
   ]
 
   alarm_actions = [
-    "${var.sns-arn}",
+    "${var.sns_arn}",
   ]
 
   dimensions {
@@ -91,11 +91,11 @@ resource "aws_cloudwatch_metric_alarm" "rds_freestoragespace" {
   treat_missing_data  = "notBreaching"
 
   ok_actions = [
-    "${var.sns-arn}",
+    "${var.sns_arn}",
   ]
 
   alarm_actions = [
-    "${var.sns-arn}",
+    "${var.sns_arn}",
   ]
 
   dimensions {
@@ -117,11 +117,11 @@ resource "aws_cloudwatch_metric_alarm" "rds_readiops" {
   treat_missing_data  = "notBreaching"
 
   ok_actions = [
-    "${var.sns-arn}",
+    "${var.sns_arn}",
   ]
 
   alarm_actions = [
-    "${var.sns-arn}",
+    "${var.sns_arn}",
   ]
 
   dimensions {
@@ -143,11 +143,11 @@ resource "aws_cloudwatch_metric_alarm" "rds_networkreceivethroughput" {
   treat_missing_data  = "notBreaching"
 
   ok_actions = [
-    "${var.sns-arn}",
+    "${var.sns_arn}",
   ]
 
   alarm_actions = [
-    "${var.sns-arn}",
+    "${var.sns_arn}",
   ]
 
   dimensions {
