@@ -169,11 +169,11 @@ resource "aws_cloudwatch_metric_alarm" "rds_databaseconnections" {
   treat_missing_data  = "notBreaching"
 
   ok_actions = [
-    "${var.sns-arn}",
+    "${var.sns_arn}",
   ]
 
   alarm_actions = [
-    "${var.sns-arn}",
+    "${var.sns_arn}",
   ]
 
   dimensions {
@@ -194,11 +194,11 @@ resource "aws_cloudwatch_metric_alarm" "rds_cpuutilization" {
   treat_missing_data  = "notBreaching"
 
   ok_actions = [
-    "${var.sns-arn}",
+    "${var.sns_arn}",
   ]
 
   alarm_actions = [
-    "${var.sns-arn}",
+    "${var.sns_arn}",
   ]
 
   dimensions {
